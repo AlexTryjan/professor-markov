@@ -321,8 +321,14 @@ class MarkovBot():
 				# making any further attempts
 				if attempts >= maxtries:
 					self._error(u'generate_text', u"Made %d attempts to generate text, but all failed. " % (attempts))
-		
-		return sentence
+
+		with open('names.txt', 'rb') as f:
+			pkmn_names = pickle.load(f)
+
+		rand_pkmn = random.randrange(0,800)
+		sentence_with_pkmn = "%s - %s" % (pkmn_names[rand_pkmn],sentence)
+
+		return sentence_with_pkmn
 	
 	
 	def pickle_data(self, filename):

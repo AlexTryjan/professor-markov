@@ -1,4 +1,5 @@
 venv/
 ez_setup.py
-test.txt
+*.txt
 *.pyc
+secret.py
