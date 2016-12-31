@@ -1,0 +1,4 @@
+venv/
+ez_setup.py
+test.txt
+*.pyc
