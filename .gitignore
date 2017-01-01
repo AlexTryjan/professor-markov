@@ -3,3 +3,4 @@ ez_setup.py
 *.txt
 *.pyc
 secret.py
+markovbot/
